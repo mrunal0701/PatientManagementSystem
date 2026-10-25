@@ -1,16 +1,16 @@
-
 import Image from 'next/image';
 import { Star } from 'lucide-react';
 
 interface PatientReviewProps {
   name: string;
-  image:string;
+  image: string;
   rating: number;
   review: string;
   viewProfile?: boolean;
 }
 
-export default function PatientReviewCard({ name, rating, review, viewProfile }: PatientReviewProps) {
+// FIX: Added 'image' to the destructured props below
+export default function PatientReviewCard({ name, image, rating, review, viewProfile }: PatientReviewProps) {
   const stars = Array(5).fill(0).map((_, i) => (
     <Star key={i} size={16} fill={i < rating ? 'gold' : 'gray'} strokeWidth={i < rating ? 0 : 1} color={i < rating ? 'gold' : 'gray'} />
   ));

@@ -59,7 +59,7 @@ export default function SignupPage() {
           {/* Top Half: Doctor Image */}
           <div className="h-2/3 relative">
             <Image
-              src="/images/main_page_img.jpeg" 
+              src="/images/main_page_img1.jpeg" 
               alt="Doctor smiling in a modern clinic"
               layout="fill"
               objectFit="cover"
